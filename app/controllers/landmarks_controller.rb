@@ -25,7 +25,7 @@ class LandmarksController < ApplicationController
   end
   
   patch '/landmarks/:id' do 
-    
+    @landmark = Landmark.update(params[:landmark])
   end
   
 end
