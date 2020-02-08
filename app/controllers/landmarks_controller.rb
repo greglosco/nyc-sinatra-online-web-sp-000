@@ -14,4 +14,6 @@ class LandmarksController < ApplicationController
     @landmark = Landmark.create(params[:landmark])
   end
   
+  get '/landmark'
+  
 end
