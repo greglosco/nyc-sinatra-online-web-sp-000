@@ -4,8 +4,9 @@
 
 <form method='post' action='/landmarks/<%= @landmark.id %>'>
   <input type='hidden' name='patch' id='_method'>
-  
-  
+  <input type='text' name='landmark[name]' id='landmark_name'>
+  <input type='text' name='landmark[year_completed]' id="landmark_year_completed">
+  <input type='submit' value='Edit Landmark'>
 </form>
 
 <a class="button" href="/landmarks">Landmarks</a>
